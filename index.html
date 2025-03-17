@@ -3,95 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula</title>
+    <title>Aula - Circuit com Shopee</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #1a1a1a;
-            color: #ffffff;
+            background-color: #121212;
+            color: #ffffff; 
             margin: 0;
-            padding: 10px;
+            padding: 20px;
         }
+
         header {
             text-align: center;
             padding: 20px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
-        img {
-            border-radius: 15px;
-            width: 80%;
-            max-width: 500px; 
-            display: block; 
-            margin: 0 auto; 
+
+        h1 {
+            font-size: 1.1em; 
+            margin: 0; 
+            text-shadow: 0 0 2px rgba(255, 183, 77, 0.5);
         }
+
         .container {
             max-width: 800px;
-            margin: 0 auto; 
+            margin: 20px auto; 
             padding: 20px;
-            background-color: #2a2a2a;
+            background-color: #1e1e1e; 
             border-radius: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            border: 1px solid #F76A1C;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            position: relative; 
         }
-h1 {
-    font-family: 'Poppins', sans-serif; /* Fonte Poppins */
-    color: #F76A1C; /* Cor do texto em um tom escuro e neutro */
-    font-size: 1.3em; /* Tamanho da fonte */
-    text-align: center; /* Centralizar o texto */
-    margin: 0 0 20px 0; /* Margens */
-    font-weight: 600; /* Peso da fonte */
-    padding: 10px; /* Preenchimento */
-    border-bottom: 1px solid #F76A1C; /* Linha inferior sutil */
-    display: inline-block; /* Para aplicar o fundo corretamente */
-    transition: border-color 0.3s ease; /* Transição suave para efeito de hover */
-}
 
-h1:hover {
-    border-color: #FFB74D; /* Mudança de cor da linha inferior ao passar o mouse */
-}
+        img {
+            border-radius: 15px;
+            width: 100%;
+            max-width: 500px; 
+            display: block; 
+            margin: 20px auto; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            border: 1px solid #C76A1C;
+            padding: 2px; 
+            box-sizing: border-box; 
+        }
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 10px; 
+            left: 10px; 
+            right: 10px; 
+            bottom: 10px; 
+            border-radius: 50%;
+            border: 2px solid rgba(255, 183, 77, 0.7); 
+            animation: glow 1.5s infinite alternate; 
+            z-index: -1; 
+        }
+
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 5px rgba(255, 183, 77, 0.5), 0 0 10px rgba(255, 183, 77, 0.3);
+            }
+            100% {
+                box-shadow: 0 0 15px rgba(255, 183, 77, 1), 0 0 30px rgba(255, 183, 77, 0.7);
+            }
+        }
+
+        p {
+            line-height: 1.6; 
+            margin: 15px 0;
+        }
+
         ul {
             list-style-type: none;
             padding: 0;
         }
+
         li {
-            margin: 10px 0;
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #2a2a2a; 
+            border-radius: 5px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
         }
+
+        li strong {
+                       color: #C76A1C; 
+        }
+
         .footer {
             text-align: center;
             margin-top: 20px;
-            font-size: 0.8em;
+            font-size: 0.9em;
             color: #cccccc;
         }
+
         .whatsapp-icon {
             font-size: 18px; 
-            color: #F76A1C; 
+            color: #C76A1C; 
             margin-right: 5px;
         }
     </style>
 </head>
 <body>
 
+<header>
+    <h1>Guia para Iniciantes: Organização</h1>
+</header>
+
 <div class="container">
-    <h1>Contribuindo para entregas rapidas e eficientes: comece a se organizar</h1>
-    <img src="imagem.jpeg" alt="Imagem de Entrega">
-    <p>Caso você esteja insatisfeito com os resultados do planejamento da sua rota, considere ler com atenção estas dicas. Você poderá realizar mais entregas em menos tempo, aumentar seus ganhos e trabalhar de forma mais eficiente, podendo até mesmo dobrar as suas entregas.</p>
+    <img src="1.png" alt="Imagem de Entrega">
+    <p>Durante minhas entregas, preteri o valor dado à organização que poderia ter sido feito antes do meu dia de trabalho. Por isso, elaborei este pequeno guia para ajudar outros entregadores iniciantes a não cometerem o mesmo erro que eu. Caso você esteja enfrentando problemas no seu dia a dia, considere ler com atenção e apenas siga o caminho das pedras.</p>
+    <p>Contribuição de IAN D. SANTOS</p>
     
     <ul>
         <li><strong>Rota:</strong> Assim que você sair do galpão com a rota no seu aplicativo da Shopee, passe ela para o Circuit (requer assinatura).</li>
         <li><strong>Organização:</strong> No Circuit, inverta a rota (da maior ordem para a menor) depois otimize e refine de acordo com sua preferência.</li>
-        <li><strong>Separação:</strong> Separe os pedidos, agrupando os pedidos em em caixas e/ou sacos plasticos em ordem crescente. Isso facilita o manuseio e evita confusões.</li>
-        <li><strong>Pacotes Volumosos:</strong> Para pacotes grandes, utilize a palavra-chave. Envie o seguinte script ao destinatário antes de sair para a entrega: <br><br>
+        <li><strong>Separação:</strong> Separe os pedidos, agrupando os pedidos em caixas e/ou sacos plásticos em ordem crescente. Isso facilita o manuseio dos pacotes e evita confusões com o destinatário.</li>
+        <li><strong>Pacotes Volumosos:</strong> Envie o seguinte script ao destinatário antes de sair para a entrega do pedido específico: <br><br>
         <em>Olá! Sou o entregador da Shopee e estou a caminho com a sua entrega. Caso não possa receber, informe a palavra-chave para que outra pessoa receba. Obrigado!</em></li>
-        <li><strong>Comunicação:</strong> Envie o seguinte script para o destinatário ao iniciar a entrega do pedido específico: <br><br>
+        <li><strong>Pacotes Pequenos:</strong> Envie o seguinte script para o destinatário ao iniciar a entrega do pedido específico: <br><br>
         <em>Olá! Sou o entregador da Shopee e estou a caminho com sua entrega.</em></li>
     </ul>
-    <p>A comunicação individual com o destinatário antes da entrega reduz a chance de problemas.</p>
+    <p>A comunicação individual com o destinatário antes da entrega reduz a chance de problemas mal entendidos.</p>
 </div>
 
 <div class="footer">
-    <p>© Contribuição de Ian D. Santos</p>
-    <p>
         <i class="fab fa-whatsapp whatsapp-icon"></i> 
         whatsapp +55 22 98132-7976
     </p>
