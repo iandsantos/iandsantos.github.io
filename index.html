@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula - Circuit com Shopee</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
@@ -24,9 +23,28 @@
         }
 
         h1 {
-            font-size: 1.1em; 
+            font-size: 1.3em; 
             margin: 0; 
             text-shadow: 0 0 2px rgba(255, 183, 77, 0.5);
+            display: flex;
+            align-items: center; /* Alinha verticalmente o ícone e o texto */
+            justify-content: center; /* Centraliza o conteúdo */
+        }
+
+        .shopee-icon {
+            width: 30px; /* Ajuste o tamanho do ícone conforme necessário */
+            height: auto; /* Mantém a proporção da imagem */
+            margin-right: 10px; 
+            animation: glow 1.5s infinite alternate; 
+        }
+
+        @keyframes glow {
+            0% {
+                filter: drop-shadow(0 0 5px rgba(255, 183, 77, 0.5));
+            }
+            100% {
+                filter: drop-shadow(0 0 15px rgba(255, 183, 77, 1));
+            }
         }
 
         .container {
@@ -50,27 +68,6 @@
             padding: 2px; 
             box-sizing: border-box; 
         }
-        .container::before {
-            content: '';
-            position: absolute;
-            top: 10px; 
-            left: 10px; 
-            right: 10px; 
-            bottom: 10px; 
-            border-radius: 50%;
-            border: 2px solid rgba(255, 183, 77, 0.7); 
-            animation: glow 1.5s infinite alternate; 
-            z-index: -1; 
-        }
-
-        @keyframes glow {
-            0% {
-                box-shadow: 0 0 5px rgba(255, 183, 77, 0.5), 0 0 10px rgba(255, 183, 77, 0.3);
-            }
-            100% {
-                box-shadow: 0 0 15px rgba(255, 183, 77, 1), 0 0 30px rgba(255, 183, 77, 0.7);
-            }
-        }
 
         p {
             line-height: 1.6; 
@@ -91,7 +88,7 @@
         }
 
         li strong {
-                       color: #C76A1C; 
+            color: #C76A1C; 
         }
 
         .footer {
@@ -110,11 +107,9 @@
 </head>
 <body>
 
-<header>
-    <h1>Guia para Iniciantes: Organização</h1>
-</header>
 
 <div class="container">
+        <h1>Guia para Iniciantes: Organização</h1>
     <img src="1.png" alt="Imagem de Entrega">
     <p>Durante minhas entregas, preteri o valor dado à organização que poderia ter sido feito antes do meu dia de trabalho. Por isso, elaborei este pequeno guia para ajudar outros entregadores iniciantes a não cometerem o mesmo erro que eu. Caso você esteja enfrentando problemas no seu dia a dia, considere ler com atenção e apenas siga o caminho das pedras.</p>
     <p>Contribuição de IAN D. SANTOS</p>
@@ -132,9 +127,8 @@
 </div>
 
 <div class="footer">
-        <i class="fab fa-whatsapp whatsapp-icon"></i> 
-        whatsapp +55 22 98132-7976
-    </p>
+    <i class="fab fa-whatsapp whatsapp-icon"></i> 
+    whatsapp +55 22 98132-7976
 </div>
 
 </body>
